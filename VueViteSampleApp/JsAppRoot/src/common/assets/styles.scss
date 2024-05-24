@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+$gutter: 1rem; //for primeflex grid system
+
+
+
+/* Declare our colours */
+html {
+}
+
+/* QUICK GLOBAL STYLES */
+summary {
+  cursor: pointer;
+}
+
+span.badge-sml {
+  min-width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+
+/* globally disable a:visited */
+a, a:visited {
+  color: var(--blue-600);
+}
+a.underline {
+  text-decoration: underline !important;
+}
+a.underline:hover {
+  color: var(--blue-400);
+}

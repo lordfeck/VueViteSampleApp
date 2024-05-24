@@ -1,0 +1,216 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    font-family: cabin, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+body {
+    margin:0;
+}
+
+div#mainPageBody {
+    margin: 20px;
+    min-height: 500px;
+    background: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #686868;
+}
+h1, h2, h3 {
+    font-family: cabin, Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+a:link{color:#0e54ca}
+a:active{color:#0e54ca}
+a:visited{color:#0e54ca}
+a:hover{color: #12708b}
+
+/* Global Header */
+
+nav#mciNavBar {
+    background: linear-gradient(70deg, #0083bf, #eb018c);
+    font-weight: 400;
+    color: white;
+    padding: 0 20px 0 20px;
+    min-height: 90px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a#mciName {
+    font-weight: bold;
+    font-family: barlow-med, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-brand, .navbar-light {
+    color: #ffffff !important;
+}
+
+li.nav-item {
+    display: inline;
+    font-size:1.2em;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+li.nav-item a {
+   text-decoration: none; 
+}
+li.nav-item a:hover {
+    color: #eb018c;
+    text-decoration: underline;
+}
+
+/* Reusable Components */
+
+div#mainHeader {
+    padding-bottom: 10px;
+}
+
+div.action-section {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 0px;
+    width: 100%;
+    background-color: #feffcb;
+    border-radius: 15px;
+}
+
+.action-section a, .action-section a:visited {
+    text-decoration-line: none;
+}
+
+div.list-body {
+    padding-bottom: 10px;
+}
+
+/* Flasher */
+div#hbkFlasher {
+    min-height: 100px;
+    z-index: 99;
+    margin: 20px;
+    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    
+    background-color: #00c600;
+    opacity: 85%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+div#hbkFlasher.error {
+    background-color: #f42626;
+}
+div#hbkFlasherMessage {
+    display: flex;
+    align-items: center;
+}
+
+/* MyND */
+.subNav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-bottom: 1px solid grey;
+    margin-bottom: 4px;
+}
+.subNav a, .subNav a:visited {
+    text-decoration: none;
+    border-top: 1px solid grey;
+    min-width: 30px;
+    display: inline-block;
+    padding: 4px;
+    color: #282828;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-right: 10px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    background-color: #d7d7d7;
+}
+
+.subNav a:hover {
+    background-color: #998eca;
+    text-shadow: 1px 1px 2px #b7b7b7;
+}
+
+.subNav a.active {
+    background-color: #99a8fd; 
+}
+
+/* generic table styles */
+
+div#table1Wrap, div.table1Wrap {
+    max-width: 850px;
+    background-color: #fdf9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.table1Item {
+    padding: 2px;
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+div.table1OuterWrap { /* fix padding on table1 table */
+    background-color: #fdf9f9;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+table.table1 {
+    max-width: 900px;
+    background-color: #fdf9f9;
+    border-collapse: collapse;
+}
+
+tr.table1Item, thead.table1Item {
+    border-bottom: 1px solid #d7d7d7;
+}
+thead.table1Item {
+    font-weight: bold;
+}
+ tr.table1Item td {
+     padding: 5px;
+ }
+
+/* Home  - TODO breakout! */
+div#homeContainer {
+    text-align: center;
+    margin-top: 0px;
+    min-height: 500px;
+}
+
+footer {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+div.footer-item {}
+
+/* CONVENIENCES */
+.no-margins {
+    margin: 0;
+}

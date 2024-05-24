@@ -1,0 +1,194 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Controllers\AdminPanel\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite.Design" />
+    <None Remove="Repository\" />
+    <None Remove="Repository\Implementation\" />
+    <None Remove="Views\Practitioner\" />
+    <None Remove="Models\View\" />
+    <None Remove="Helpers\" />
+    <None Remove="mci.db" />
+    <None Remove="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="Views\Home\Index.cshtml" />
+    <AdditionalFiles Include="Views\Home\Privacy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Common\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="JsAppRoot\src\common\components\Controls\" />
+    <Folder Include="JsAppRoot\src\common\components\layout\" />
+    <Folder Include="JsAppRoot\src\common\views\" />
+    <Folder Include="JsAppRoot\src\mynd\Appointments\Booking\" />
+    <Folder Include="JsAppRoot\src\mynd\components\Reception\Controls\" />
+    <Folder Include="JsAppRoot\src\mynd\components\Reception\State\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\css\contrib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EFCore.NamingConventions" Version="8.0.0-rc.2" />
+    <PackageReference Include="hangfire" Version="1.8.11" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.11" />
+    <PackageReference Include="Hangfire.PostgreSql" Version="1.20.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Features" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
+    <PackageReference Include="PasswordGenerator" Version="2.1.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Vite.AspNetCore" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\Account\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="App_Code\Helpers.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\add-edit-client.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\client-edit.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\clientrecord.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\clientrecords.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\clinic-add-edit-room.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\clinic-setweekavailability.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\globals.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\mcp-uac-clinic.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\mcp-uac-practice.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\messaging.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\mynd-setweekavailability.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\review.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\site.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\treatmentcreate.js" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\Auditing\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\Auditing\RecentLogins.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\Auditing\WhoIsOnline.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\ClinicManagement\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\ClinicManagement\ListClinics.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\ClinicManagement\PasswordReset.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\ClinicManagement\RegisterClinic.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\ClinicManagement\ViewClinic.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\ClinicManagement\ViewPractice.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\MCP\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\MCP\Status.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\PracticeManagement\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\PracticeManagement\ListPractices.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\PracticeManagement\PasswordReset.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\PracticeManagement\RegisterPractice.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\PracticeManagement\ViewPractice.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\Views\Shared\_McpShared.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MCP\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\AccessDenied.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ConfirmEmail.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ConfirmEmailChange.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Error.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ExternalLogin.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ForgotPassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ForgotPasswordConfirmation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Lockout.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Login.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\LoginWith2fa.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\LoginWithRecoveryCode.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Logout.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\ChangePassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\DeletePersonalData.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\Disable2fa.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\DownloadPersonalData.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\Email.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\EnableAuthenticator.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\ExternalLogins.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\GenerateRecoveryCodes.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\PersonalData.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\ResetAuthenticator.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\SetPassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\ShowRecoveryCodes.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\TwoFactorAuthentication.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\_ManageNav.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\_StatusMessage.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Management\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\Register.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\RegisterConfirmation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ResendEmailConfirmation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ResetPassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\ResetPasswordConfirmation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\_StatusMessage.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Account\Pages\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\AvailabilityManagement.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\BookClientTreatment.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\BookingConfirm.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\BookingConfirmed.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\CancelBooking.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\SetIndefAvailability.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\SetWeekAvailability.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\TreatmentCreate.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Appointment\TreatmentManagement.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Client\AddEditClient.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Client\AllClients.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Client\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Configuration\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Messaging\Conversation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Messaging\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Record\ClientRecord.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Record\ClientRecords.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\Record\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\RoomReservation\AvailableRooms.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\RoomReservation\ConfirmReservation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\RoomReservation\MakeAReservation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\RoomReservation\MyReservations.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\MyND\Views\RoomReservation\TimeslotSelect.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+    <_ContentIncludedByDefault Remove="Areas\Client\Views\Messaging\Conversation.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Client\Views\MyDetails\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Client\Views\Shared\_Client.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_AvailabilitySelect.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_Messaging.cshtml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+[*.cs]
+
+# CS8618: Non nullable field _name is not initialized.
+dotnet_diagnostic.CS8618.severity = none

@@ -1,0 +1,13 @@
+mci.db*
+wwwroot/img/samples/*
+tailwind
+*.swp
+
+wwwroot/css/contrib/*.css
+wwwroot/css/jquery*
+wwwroot/js/contrib/*
+wwwroot/node_modules/
+wwwroot/dist/
+
+# TEMPORARY!!! Remove when DB is finalised
+Migrations/

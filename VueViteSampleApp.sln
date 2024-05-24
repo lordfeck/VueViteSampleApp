@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueViteSampleApp", "VueViteSampleApp\VueViteSampleApp.csproj", "{4926CEC0-1687-4C6D-96B8-EDCDD45F1652}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4926CEC0-1687-4C6D-96B8-EDCDD45F1652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4926CEC0-1687-4C6D-96B8-EDCDD45F1652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4926CEC0-1687-4C6D-96B8-EDCDD45F1652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4926CEC0-1687-4C6D-96B8-EDCDD45F1652}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F770D406-A759-4A39-B676-70B4E22A9390}
+	EndGlobalSection
+EndGlobal

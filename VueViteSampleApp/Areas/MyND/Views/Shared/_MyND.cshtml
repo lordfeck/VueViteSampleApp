@@ -1,0 +1,14 @@
+@{
+    Layout = "_Layout";
+}
+@functions
+{
+    public string GetActiveClass(string navPath){
+        if (ViewBag.CurrentNav == null) return "";
+        return ViewBag.CurrentNav.Contains(navPath) ? "active" : "";
+    }
+}
+<div id="myNdNav" class="subNav">
+    <a asp-area="MyND" asp-controller="Reception" asp-action="Index" class="@GetActiveClass("Reception")" >Reception</a>
+</div>
+@RenderBody()
