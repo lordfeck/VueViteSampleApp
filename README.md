@@ -5,10 +5,10 @@ Vue Vite Sample App in ASP.NET
 - Application is divided into two 'sections', /client and /mynd.
 - Login is handled by ASP.NET identity (stripped from this minimal reproduction repo)
 - Clients and mynd users login and get their respective UI, the working one is mounted under `/Areas/MyND/Views/UI/Index.cshtml`
-- When deploying to production, we will have frontend assets hosted by Nginx but login still processed by Asp.net (this is because its Identity system is featureful and we wish to keep it), i.e. we aren't running the app from Vite's index.html and having ASP.NET handle only API calls.
+- When deploying to production, we will have frontend assets hosted by Nginx but login still processed by Asp.net (this is because its Identity system is featureful and we wish to keep it), i.e. we aren't running the app from Vite's index.html and having ASP.NET handle only API calls. (NB - I may revisit this idea if it is infeasible, we could probably still do ASP.NET identity and role auth using just APIs.)
 
 # Starting this
-For the frontend, just cd to JsAppRoot and run `npm run dev`. Start the backend code using dotnet or your IDE as usual.
+For the frontend, just cd to JsAppRoot and run `npm run dev`. Start the backend code using dotnet or your IDE as usual. To see the problem, click on 'MyND Login' and then click 'Launch New UI' to open the Vue frontend.
 
 # The problem description
 The vue plugin works very well for ASP.NET. Also I have routing configured as I like it, ASP.NET handles API calls, Vue routing handles pages, all pages under the new UI path are passed to the Vue router.
