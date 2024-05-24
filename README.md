@@ -22,4 +22,4 @@ The evidence for this belief is that when I change `app.UseViteDevelopmentServer
 
 Ideally, we'd configure Vite to serve static assets under a subdirectory rather than root, which would make it clear when something should be passed to vite and when not. Or, instead of proxying requests through the listening ASP.NET kestrel server (https://localhost:7251), load the assets directly from the vite dev server (http://localhost:5173).
 
-There is an ['assetsDir'](https://vitejs.dev/config/build-options.html#build-assetsdir) config value for Vite. But it appears that Vite [only uses 'assetDir' for production builds](https://vitejs.dev/guide/assets.html#the-public-directory).
+There is an ['assetsDir'](https://vitejs.dev/config/build-options.html#build-assetsdir) config value for Vite which could help, because assets would be served under a known path rather than just root. But it appears that Vite [only uses 'assetDir' for production builds](https://vitejs.dev/guide/assets.html#the-public-directory) which is frustrating as it is baffling.
